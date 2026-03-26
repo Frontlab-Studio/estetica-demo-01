@@ -1,6 +1,93 @@
-/* ==========================================================================
-   SECTION 09: PÁGINAS LEGAIS (PRIVACIDADE E TERMOS) - ELITE DESIGN
-   ========================================================================== */
+@charset "UTF-8";
+
+:root {
+    --cor-primaria: #EADCE0;
+    --cor-secundaria: #D4BFC4;
+    --cor-fundo: #FAFAFC;
+    --cor-suave: #FFFFFF;
+    --cor-texto: #3E383A;
+    --cor-accent: #B87388;
+
+    --fonte-titulo: 'Cormorant Garamond', serif;
+    --fonte-corpo: 'Plus Jakarta Sans', sans-serif;
+
+    --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    --p-inline: clamp(1.5rem, 5vw, 4rem);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    touch-action: manipulation;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--fonte-corpo);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+    font-family: var(--fonte-titulo);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+img,
+picture,
+svg,
+video {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
 
 .legal-body {
     background-color: var(--cor-suave);

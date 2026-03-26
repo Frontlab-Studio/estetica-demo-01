@@ -162,3 +162,22 @@ if (trackDepoimentos && btnPrev && btnNext) {
         trackDepoimentos.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
     });
 }
+// --- SISTEMA DE COOKIES LGPD ---
+document.addEventListener("DOMContentLoaded", () => {
+    const cookieBanner = document.getElementById("cookie-banner");
+    const acceptBtn = document.getElementById("accept-cookies");
+
+    // Verifica no localStorage se o usuário já aceitou antes
+    if (!localStorage.getItem("cookiesAccepted")) {
+        // Coloquei um delay de 1.5 segundos para não poluir a tela logo de cara
+        setTimeout(() => {
+            cookieBanner.classList.add("show");
+        }, 1500);
+    }
+
+    // Ação de clique para aceitar e ocultar
+    acceptBtn.addEventListener("click", () => {
+        localStorage.setItem("cookiesAccepted", "true");
+        cookieBanner.classList.remove("show");
+    });
+});

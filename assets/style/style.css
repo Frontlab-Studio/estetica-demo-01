@@ -612,6 +612,15 @@ button {
     .scroll-indicator {
         display: none;
     }
+
+    .hero-overlay {
+        mix-blend-mode: normal;
+        background: rgba(45, 35, 46, 0.65);
+    }
+
+    .hero-section {
+        contain: paint layout;
+    }
 }
 
 @media (width <=360px) {

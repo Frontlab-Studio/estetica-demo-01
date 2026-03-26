@@ -1,0 +1,245 @@
+/* ==========================================================================
+   SECTION 09: PÁGINAS LEGAIS (PRIVACIDADE E TERMOS) - ELITE DESIGN
+   ========================================================================== */
+
+.legal-body {
+    background-color: var(--cor-suave);
+}
+
+/* Header Estático para subpáginas */
+.static-header {
+    background: #FFFFFF;
+    position: relative;
+    /* Desativa o fixed para páginas legais */
+    border-bottom: 1px solid rgba(212, 191, 196, 0.3);
+}
+
+.btn-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--cor-texto);
+    letter-spacing: 1px;
+}
+
+.btn-voltar svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.btn-voltar:hover svg {
+    transform: translateX(-5px);
+    color: var(--cor-accent);
+}
+
+/* Hero das Páginas Legais */
+.legal-hero {
+    background-color: var(--cor-fundo);
+    padding: clamp(4rem, 8vh, 6rem) var(--p-inline);
+    text-align: center;
+    border-bottom: 1px solid rgba(212, 191, 196, 0.2);
+}
+
+.legal-hero .hero-badge {
+    color: var(--cor-accent);
+    border-color: var(--cor-accent);
+    background: transparent;
+}
+
+.legal-hero .hero-title {
+    color: var(--cor-texto);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    text-shadow: none;
+}
+
+.legal-hero p {
+    color: #666;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Layout Grid: Menu + Conteúdo */
+.legal-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: clamp(3rem, 6vw, 6rem);
+    padding: clamp(4rem, 8vh, 6rem) var(--p-inline);
+    align-items: start;
+    max-width: 1200px;
+}
+
+/* Menu Lateral Sticky */
+.legal-sidebar {
+    position: sticky;
+    top: 100px;
+    /* Gruda no topo ao rolar a tela */
+}
+
+.legal-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.legal-nav a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    border-radius: 12px;
+    transition: var(--transition);
+    border-left: 3px solid transparent;
+}
+
+.legal-nav a:hover,
+.legal-nav a.active {
+    background: #FFFFFF;
+    color: var(--cor-accent);
+    border-left-color: var(--cor-accent);
+    box-shadow: 0 4px 15px rgba(184, 115, 136, 0.05);
+}
+
+/* Tipografia Focada em Legibilidade (Copywriting) */
+.legal-content {
+    max-width: 800px;
+}
+
+.legal-section {
+    margin-bottom: 4rem;
+    scroll-margin-top: 100px;
+    /* Impede que o menu fixo cubra o título ao clicar no link */
+}
+
+.legal-section h2 {
+    font-family: var(--fonte-titulo);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    color: var(--cor-texto);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(212, 191, 196, 0.3);
+    padding-bottom: 0.8rem;
+}
+
+.legal-section p {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+}
+
+.legal-section strong {
+    color: var(--cor-texto);
+    font-weight: 600;
+}
+
+.legal-section ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.2rem;
+}
+
+.legal-section ul li {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    position: relative;
+    list-style-type: none;
+}
+
+.legal-section ul li::before {
+    content: '•';
+    color: var(--cor-accent);
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    left: -1.2rem;
+    top: -4px;
+}
+
+.last-update {
+    font-size: 0.85rem !important;
+    color: #999 !important;
+    font-style: italic;
+    text-align: right;
+    border-top: 1px solid rgba(212, 191, 196, 0.2);
+    padding-top: 1rem;
+}
+
+/* RESPONSIVIDADE - PÁGINAS LEGAIS */
+
+/* Tablet */
+@media (width <=1024px) {
+    .legal-container {
+        grid-template-columns: 240px 1fr;
+        gap: 3rem;
+    }
+}
+
+/* Mobile Padrão (Transforma Menu Lateral em Scroll Horizontal) */
+@media (width <=768px) {
+    .legal-container {
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+    }
+
+    .legal-sidebar {
+        position: relative;
+        top: 0;
+        margin-bottom: 2rem;
+        /* Faz o menu vazar a tela elegantemente */
+        width: 100vw;
+        margin-left: calc(-1 * var(--p-inline));
+        padding: 0 var(--p-inline);
+    }
+
+    .legal-nav ul {
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 15px;
+        /* Espaço para scrollbar */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .legal-nav ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .legal-nav a {
+        white-space: nowrap;
+        scroll-snap-align: start;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+        border-radius: 8px;
+        background: #FFFFFF;
+        box-shadow: 0 4px 10px rgba(184, 115, 136, 0.05);
+    }
+
+    .legal-nav a.active {
+        border-left: none;
+        border-bottom-color: var(--cor-accent);
+    }
+
+    .legal-section {
+        scroll-margin-top: 20px;
+    }
+}
+
+@media (width <=360px) {
+    .btn-voltar span {
+        display: none;
+        /* Esconde texto 'Voltar ao Início', deixa só o ícone */
+    }
+
+    .legal-section p,
+    .legal-section ul li {
+        font-size: 0.95rem;
+    }
+}

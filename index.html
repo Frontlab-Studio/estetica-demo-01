@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estética de Elite | Frontlab Studio</title>
+    <link rel="preload" as="image" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+
+    <header class="header-main" id="header">
+        <div class="container-nav">
+            <a href="#" class="logo-link">
+                <img src="assets/svg/logo.png" alt="Logo Estética de Elite" class="logo-img" fetchpriority="high"
+                    decoding="sync">
+            </a>
+
+            <nav class="nav-desktop">
+                <ul class="nav-list">
+                    <li><a href="#especialidades" class="nav-item">Procedimentos</a></li>
+                    <li><a href="#diferencial" class="nav-item">O Método</a></li>
+                    <li><a href="#resultados" class="nav-item">Transformações</a></li>
+                    <li><a href="#especialista" class="nav-item">A Especialista</a></li>
+                    <li><a href="#depoimentos" class="nav-item">Depoimentos</a></li>
+                    <li><a href=" #agendar" class="cta-header">Agendar Agora</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Abrir Menu" aria-expanded="false">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+            </button>
+        </div>
+
+        <div class="menu-mobile-overlay">
+            <nav class="nav-mobile">
+                <ul class="nav-list-mobile">
+                    <li><a href="#especialidades">Procedimentos</a></li>
+                    <li><a href="#diferencial">O Método</a></li>
+                    <li><a href="#resultados">Transformações</a></li>
+                    <li><a href="#especialista">A Especialista</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#agendar" class="cta-mobile">Agendar Consulta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <section class="hero-section">
+            <video autoplay muted loop playsinline disablepictureinpicture class="hero-video" fetchpriority="high"
+                poster="assets/img/hero-poster.webp">
+                <source src="assets/midia/hero-mobile.webm" type="video/webm" media="(max-width: 768px)">
+                <source src="assets/midia/hero-mobile.mp4" type="video/mp4" media="(max-width: 768px)">
+                <source src="assets/midia/hero-desktop.webm" type="video/webm">
+                <source src="assets/midia/hero-desktop.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Alto Padrão em Londrina</span>
+
+                    <h1 class="hero-title">A arte de realçar o seu olhar com <span class="italic">sofisticação</span>.
+                    </h1>
+                    <p class="hero-subtitle">Técnicas exclusivas para mulheres que não abrem mão do natural e do luxo
+                        absoluto.</p>
+
+                    <div class="hero-actions">
+                        <a href="#agendar" class="btn-primary-glow">
+                            Agendar Minha Experiência
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <section class="especialidades" id="especialidades">
+            <div class="container">
+                <header class="section-header">
+                    <span class="subtitle">Nossos Protocolos</span>
+                    <h2 class="title-section">A Expertise que seu <span class="italic">rosto merece</span></h2>
+                </header>
+
+                <div class="grid-especialidades">
+                    <article class="card-elite">
+                        <picture class="card-elite-pic">
+                            <source srcset="assets/img/cilios.avif" type="image/avif">
+                            <img src="assets/img/cilios.webp" alt="Extensão de Cílios Premium" loading="lazy"
+                                class="card-elite-img">
+                        </picture>
+
+                        <div class="card-elite-glass">
+                            <div class="glass-content">
+                                <h3>Extensão de Cílios</h3>
+                                <p>Volume e naturalidade sob medida.</p>
+                                <button class="btn-glass-action">Descobrir Protocolo</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-elite">
+                        <picture class="card-elite-pic">
+                            <source srcset="assets/img/sobrancelhas.avif" type="image/avif">
+                            <img src="assets/img/sobrancelhas.webp" alt="Design de Sobrancelhas" loading="lazy"
+                                class="card-elite-img">
+                        </picture>
+
+                        <div class="card-elite-glass">
+                            <div class="glass-content">
+                                <h3>Design de Sobrancelhas</h3>
+                                <p>Arquitetura do olhar com precisão.</p>
+                                <button class="btn-glass-action">Descobrir Protocolo</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-elite">
+                        <picture class="card-elite-pic">
+                            <source srcset="assets/img/labios.avif" type="image/avif">
+                            <img src="assets/img/labios.webp" alt="Micropigmentação Labial" loading="lazy"
+                                class="card-elite-img">
+                        </picture>
+
+                        <div class="card-elite-glass">
+                            <div class="glass-content">
+                                <h3>Micropigmentação Labial</h3>
+                                <p>Cor e contorno com efeito revitalizante.</p>
+                                <button class="btn-glass-action">Descobrir Protocolo</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="diferencial" id="diferencial">
+            <div class="container">
+                <header class="section-header">
+                    <span class="subtitle">A Assinatura do Nosso Trabalho</span>
+                    <h2 class="title-section">Números que refletem a <span class="italic">excelência</span></h2>
+                </header>
+
+                <div class="stats-grid">
+                    <article class="stat-box">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M12 5v2M12 17v2M5 12H3M21 12h-2M7.5 7.5 6 6M18 6l-1.5 1.5M7.5 16.5 6 18M18 18l-1.5-1.5" />
+                            </svg>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number"><span class="prefix">+</span><span class="counter"
+                                    data-target="2000">0</span></h3>
+                            <p class="stat-label">Olhares Transformados</p>
+                        </div>
+                    </article>
+
+                    <article class="stat-box">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number"><span class="prefix">+</span><span class="counter"
+                                    data-target="6">0</span></h3>
+                            <p class="stat-label">Anos de Experiência</p>
+                        </div>
+                    </article>
+
+                    <article class="stat-box">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 15l-3 3-2-2-3 3v-8" />
+                                <path d="M22 7l-3-3-2 2-3-3v8" />
+                                <circle cx="12" cy="9" r="3" />
+                                <path d="M12 2v4" />
+                                <path d="M12 12v4" />
+                            </svg>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number"><span class="counter" data-target="15">0</span><span
+                                    class="suffix">+</span></h3>
+                            <p class="stat-label">Certificações Internacionais</p>
+                        </div>
+
+                    </article>
+
+                </div>
+                <div class="diferencial-cta">
+                    <a href="#agendar" class="btn-whatsapp-elite">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+                        </svg>
+                        Falar com a Especialista
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="resultados" id="resultados">
+            <div class="container">
+                <header class="section-header">
+                    <span class="subtitle">O Poder do Nosso Método</span>
+                    <h2 class="title-section">Transformações <span class="italic">Reais</span></h2>
+                </header>
+
+                <div class="grid-resultados">
+                    <article class="resultado-card">
+                        <div class="before-after-container" style="--position: 50%;">
+                            <img src="assets/img/cilios-1-antes.webp" alt="Antes da Extensão de Cílios"
+                                class="img-before" loading="lazy">
+                            <img src="assets/img/cilios-1-depois.webp" alt="Depois da Extensão de Cílios"
+                                class="img-after" loading="lazy">
+
+                            <input type="range" min="0" max="100" value="50" class="slider-range"
+                                aria-label="Arraste para comparar o antes e depois">
+
+                            <div class="slider-line" aria-hidden="true">
+                                <div class="slider-button">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M8 9l-4 3 4 3M16 9l4 3-4 3" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <span class="label-before">Antes</span>
+                            <span class="label-after">Depois</span>
+                        </div>
+                        <div class="resultado-info">
+                            <h3>Extensão de Cílios</h3>
+                            <p>Técnica Fio a Fio Clássico</p>
+                        </div>
+                    </article>
+
+                    <article class="resultado-card">
+                        <div class="before-after-container" style="--position: 50%;">
+                            <img src="assets/img/cilios-2-antes.webp" alt="Antes da Extensão de Cílios"
+                                class="img-before" loading="lazy">
+                            <img src="assets/img/cilios-2-depois.webp" alt="Depois da Extensão de Cílios"
+                                class="img-after" loading="lazy">
+
+                            <input type="range" min="0" max="100" value="50" class="slider-range"
+                                aria-label="Arraste para comparar o antes e depois">
+
+                            <div class="slider-line" aria-hidden="true">
+                                <div class="slider-button">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M8 9l-4 3 4 3M16 9l4 3-4 3" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <span class="label-before">Antes</span>
+                            <span class="label-after">Depois</span>
+                        </div>
+                        <div class="resultado-info">
+                            <h3>Extensão de Cílios</h3>
+                            <p>Volume Brasileiro</p>
+                        </div>
+                    </article>
+
+                    <article class="resultado-card">
+                        <div class="before-after-container" style="--position: 50%;">
+                            <img src="assets/img/labial-antes.webp" alt="Antes da Micropigmentação Labial"
+                                class="img-before" loading="lazy">
+                            <img src="assets/img/labial-depois.webp" alt="Depois da Micropigmentação Labial"
+                                class="img-after" loading="lazy">
+
+                            <input type="range" min="0" max="100" value="50" class="slider-range"
+                                aria-label="Arraste para comparar o antes e depois">
+
+                            <div class="slider-line" aria-hidden="true">
+                                <div class="slider-button">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M8 9l-4 3 4 3M16 9l4 3-4 3" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <span class="label-before">Antes</span>
+                            <span class="label-after">Depois</span>
+                        </div>
+                        <div class="resultado-info">
+                            <h3>Micropigmentação Labial</h3>
+                            <p>Revitalização e Neutralização</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="especialista" id="especialista">
+            <div class="container especialista-container">
+                <div class="especialista-visual anim-scroll anim-left">
+                    <div class="blob-bg"></div>
+                    <picture class="pic-especialista">
+                        <source srcset="assets/img/labios.avif" type="image/avif">
+                        <img src="assets/img/labios.webp" alt="Sua Especialista em Estética de Elite" loading="lazy"
+                            class="img-especialista">
+                    </picture>
+
+                    <div class="experiencia-badge anim-scroll anim-up" style="transition-delay: 0.4s;">
+                        <span class="badge-number">6+</span>
+                        <span class="badge-text">Anos esculpindo<br>olhares</span>
+                    </div>
+                </div>
+
+                <div class="especialista-content anim-scroll anim-right" style="transition-delay: 0.2s;">
+                    <header class="section-header align-left">
+                        <span class="subtitle">A Mente Por Trás da Arte</span>
+                        <h2 class="title-section">Muito prazer, sou a <span class="italic">sua Especialista</span></h2>
+                    </header>
+
+                    <div class="especialista-bio">
+                        <p>Com múltiplas certificações internacionais, desenvolvi um método focado na anatomia
+                            individual. Aqui, não replicamos padrões artificiais; nós lapidamos os seus traços para
+                            revelar uma beleza autêntica e inconfundível.</p>
+                        <p>Meu propósito vai além da estética: é sobre devolver a sua <strong>confiança e
+                                sofisticação</strong> logo no primeiro olhar no espelho.</p>
+                    </div>
+
+                    <div class="especialista-assinatura">
+                        <span class="assinatura-texto"
+                            style="font-family: var(--fonte-titulo); font-size: 2rem; font-style: italic; color: var(--cor-secundaria);">Sua
+                            Especialista</span>
+                    </div>
+
+                    <a href="#agendar" class="btn-whatsapp-elite cta-especialista">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+                        </svg>
+                        Falar comigo no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="depoimentos" id="depoimentos">
+            <div class="container relative-container">
+                <header class="section-header">
+                    <span class="subtitle">A Voz da Experiência</span>
+                    <h2 class="title-section">O que dizem as <span class="italic">nossas clientes</span></h2>
+                </header>
+
+                <div class="carousel-wrapper anim-scroll anim-up">
+                    <button class="carousel-btn prev-btn" aria-label="Depoimento Anterior">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    <div class="carousel-depoimentos" id="track-depoimentos">
+                        <article class="depoimento-card">
+                            <div class="quote-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                            </div>
+                            <div class="stars">
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <p class="review-text">"A experiência é surreal. O ambiente, o atendimento e o resultado
+                                final da minha extensão de cílios superaram todas as expectativas. Não troco por nada!"
+                            </p>
+                            <div class="client-info">
+                                <img src="assets/img/cliente1.webp" alt="Foto da Cliente" class="client-avatar"
+                                    loading="lazy">
+                                <div class="client-details">
+                                    <h4>Marcela Fontes</h4>
+                                    <span>Volume Brasileiro</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="depoimento-card">
+                            <div class="quote-icon"><svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg></div>
+                            <div class="stars">
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <p class="review-text">"Sempre tive medo de fazer micropigmentação e ficar artificial. Mas a
+                                técnica utilizada me deixou com lábios perfeitamente naturais e com cor de saúde."</p>
+                            <div class="client-info">
+                                <img src="assets/img/cliente2.webp" alt="Foto da Cliente" class="client-avatar"
+                                    loading="lazy">
+                                <div class="client-details">
+                                    <h4>Juliana Mendes</h4>
+                                    <span>Micropigmentação Labial</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="depoimento-card">
+                            <div class="quote-icon"><svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg></div>
+                            <div class="stars">
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="var(--cor-accent)">
+                                    <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </div>
+                            <p class="review-text">"Design perfeito! Ela conseguiu alinhar o formato das minhas
+                                sobrancelhas com o meu rosto de uma forma que eu nunca tinha visto antes. Profissional
+                                ímpar."</p>
+                            <div class="client-info">
+                                <img src="assets/img/cliente3.webp" alt="Foto da Cliente" class="client-avatar"
+                                    loading="lazy">
+                                <div class="client-details">
+                                    <h4>Carolina Costa</h4>
+                                    <span>Design de Sobrancelhas</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <button class="carousel-btn next-btn" aria-label="Próximo Depoimento">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-elite">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand anim-scroll anim-up">
+                        <img src="assets/svg/logo.png" alt="Logo Estética de Elite" class="footer-logo" loading="lazy"
+                            style="filter: brightness(0) invert(1);">
+                        <p class="footer-bio">Elevando a sua beleza natural com sofisticação, técnica exclusiva e
+                            atendimento de altíssimo padrão em Londrina.</p>
+
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram" target="_blank" class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Facebook" target="_blank" class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links anim-scroll anim-up" style="transition-delay: 0.1s;">
+                        <h4 class="footer-title">Navegação Rápida</h4>
+                        <ul class="footer-list">
+                            <li><a href="#especialidades">Nossos Protocolos</a></li>
+                            <li><a href="#diferencial">O Método</a></li>
+                            <li><a href="#resultados">Transformações</a></li>
+                            <li><a href="#especialista">A Especialista</a></li>
+                            <li><a href="#depoimentos">Depoimentos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contact anim-scroll anim-up" style="transition-delay: 0.2s;">
+                        <h4 class="footer-title">Atendimento</h4>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="#agendar" class="contact-highlight">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg>
+                                    (43) 99999-9999
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="mailto:contato@esteticadeelite.com.br">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    contato@esteticadeelite.com.br
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://maps.google.com/?q=Londrina+PR" target="_blank" class="link-maps">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        width="20" height="20">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <div>
+                                        <span>Edifício Premium, Sala 101</span>
+                                        <span class="sub-address">Gleba Palhano, Londrina - PR</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-hours anim-scroll anim-up" style="transition-delay: 0.3s;">
+                        <h4 class="footer-title">Horário de Funcionamento</h4>
+                        <div class="hours-box">
+                            <p><strong>Seg - Sex:</strong> 09h00 às 19h00</p>
+                            <p><strong>Sábados:</strong> 09h00 às 13h00</p>
+                            <p><strong>Domingo:</strong> Fechado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container bottom-flex">
+                    <div class="copyright-area">
+                        <p>&copy;
+                            <script>document.write(new Date().getFullYear())</script> Estética de Elite.
+                        </p>
+                        <div class="legal-links">
+                            <a href="legal/privacidade.html">Privacidade</a>
+                            <span class="separator">&bull;</span>
+                            <a href="legal/termos.html">Termos</a>
+                        </div>
+                    </div>
+
+                    <div class="agency-signature">
+                        <p>Engineered by
+                            <a href="https://frontlabstudio.com.br/" target="_blank" class="frontlab-signature">
+                                Frontlab Studio<span class="status-dot"></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </main>
+
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
